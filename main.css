@@ -1,0 +1,167 @@
+body{
+    /*margen predeterminado*/
+    margin: 0px;
+    /*margen pa' dentro*/
+    padding: 0px;
+    /*tamaño de texto*/
+    font-size: 13px;
+    /*fuente de texto*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    width: 43px;
+    border-radius: 50px;
+}
+
+/*********************************************************/
+/*************************************/
+/******************/
+/*navegación*/
+
+header{
+    /* width - ancho /// height alto*/
+    width: 100%;
+    height: 55px;
+}
+
+header nav{
+    background-color: rgb(255, 176, 167);
+    /* como se puede mover el elemento*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .lista-right{
+    background-color: aquamarine;
+    /*eliminar viñetas*/
+    list-style: none;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*altura automática*/
+    height: auto;
+}
+
+nav .lista-right a{
+    /*color de texto*/
+    color: blueviolet;
+    /*linea debajo del texto*/
+    text-decoration: none;
+    /*margen derecho*/
+    margin-right: 30px;
+}
+
+nav .lista-right .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*////// MAIN //////*/
+main{
+    text-align: center;
+    margin-top: 160px;
+}
+
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+main .main-logo img{
+    height: 150px;
+    width: 350px;
+}
+
+/*sección imput*/
+main .main-imput{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/*caja GRIS*/
+main .main-imput-container{
+    border: 1px solid slategrey;
+    border-radius: 30px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-imput input{
+    height: 40px;
+    width: 430px;
+    border: none;
+    outline: none;
+}
+
+main .main-imput .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    padding-left: 10%;
+    background-repeat: no-repeat;
+}
+
+main .main-imput .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 25px;
+    height: 25px;
+    /*Ícono contenido en el espacio*/
+    background-position: center;
+    background-size: contain;
+    padding-left: 5%;
+    background-repeat: no-repeat;
+}
+
+main .main-imput .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-size: contain;
+    padding-right: 5%;
+    background-repeat: no-repeat;
+}
+
+main .main-botones{
+    background-color:blanchedalmond;
+    width: 550px;
+    /*vertical*-horizontal*/
+    margin: 0 auto;
+}
+
+main .main-botones div{
+    /*alinear elementos en la misma linea*/
+    display: inline-block;
+}
+
+main .main-botones button{
+    border: 0;
+    height: 40px;
+    background-color: beige;
+    font-size: 14px;
+    color: rgb(51, 51, 71);
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 0 15px;
+}
+
+/*Nos permite agregarle diseño al poner cursos sobre el elemento*/
+main .main-imput-container:hover{
+    box-shadow: 0px 0px 5px chocolate;
+}
+
+main .main-botones button:hover{
+    color: darkcyan;
+    border: 1px solid cornflowerblue;
+    box-shadow: 0 1px 1px rgb(48, 11, 11);
+}
